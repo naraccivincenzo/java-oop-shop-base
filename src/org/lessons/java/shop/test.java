@@ -8,7 +8,7 @@ public class test {
 		
 		DecimalFormat df = new DecimalFormat("0.00");
 		
-		Prodotto bottle = new Prodotto(0,"acqua", "bottiglia", 3.01f, 10);
+		Prodotto bottle = new Prodotto("acqua", "bottiglia", 3.01f, 10);
 		
 		//display formatted gross price
 		System.out.println(df.format(bottle.grossPrice(bottle.netPrice, bottle.ivaValue)));

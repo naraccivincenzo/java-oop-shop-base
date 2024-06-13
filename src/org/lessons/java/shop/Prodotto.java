@@ -12,7 +12,7 @@ public class Prodotto {
 
 	Random random = new Random();
 
-	public Prodotto(int code, String name, String description, float price, int iva) {
+	public Prodotto(String name, String description, float price, int iva) {
 		codeNumber = Math.abs(random.nextInt());
 		nameShort = name;
 		descriptionProduct = description;

@@ -21,17 +21,17 @@ public class Prodotto {
 	}
 
 	// method for base price
-	void price() {
+	public void price() {
 		System.out.println(netPrice);
 	}
 
 	// method for code+name
-	String completeName(int codeNumber, String nameShort) {
+	public String completeName(int codeNumber, String nameShort) {
 		return codeNumber + "-" + nameShort;
 	}
 
 	// method for gross price
-	float grossPrice(float netPrice, int ivaValue) {
+	public float grossPrice(float netPrice, int ivaValue) {
 		return netPrice + (netPrice * ivaValue) / 100;
 	}
 }

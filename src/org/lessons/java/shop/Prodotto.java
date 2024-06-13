@@ -27,13 +27,11 @@ public class Prodotto {
 
 	// method for code+name
 	String completeName(int codeNumber, String nameShort) {
-		String completeName = codeNumber + "-" + nameShort;
-		return completeName;
+		return codeNumber + "-" + nameShort;
 	}
 
 	// method for gross price
 	float grossPrice(float netPrice, int ivaValue) {
-		float grossPrice = netPrice + (netPrice * ivaValue) / 100;
-		return grossPrice;
+		return netPrice + (netPrice * ivaValue) / 100;
 	}
 }
